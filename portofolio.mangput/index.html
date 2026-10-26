@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MANGPUTT – Portofolio Siswa RPL</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="javascript-section.css">
+
+</head>
+
+<body>
+
+<audio id="lagu" loop>
+    <source src="./lagu.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playMusik" class="tombol-musik" type="button">
+    ▶
+</button>
+
+<header class="top">
+  <div class="wrap nav">
+    
+    <a class="brand" href="#atas">MANGPUTT</a>
+    <ul>
+      <li><a class="l" href="#tentang">Tentang</a></li>
+      <li><a class="l" href="#proyek">Proyek</a></li>
+      <li><a class="l" href="#skill">Keahlian</a></li>
+      <li><a class="l" href="#javascript">JavaScript</a></li>
+      <li><a class="l" href="#kontak">Kontak</a></li>
+    </ul>
+    <button class="tbtn" id="theme" type="button" aria-label="Ganti tema terang atau gelap">Tema</button>
+  </div>
+</header>
+
+<main id="atas">
+
+  <div class="hero">
+    <div class="wrap grid">
+      <div>
+        <h1>Halo, saya Mangput. Saya merancang web yang rapi dan mudah dipakai.</h1>
+        <p class="lead">Siswa Rekayasa Perangkat Lunak (RPL) yang belajar membuat tampilan web, dari sketsa desain UI/UX sampai menjadi halaman yang jalan.</p>
+        <div class="cta">
+          <a class="btn" href="#proyek">Lihat proyek saya</a>
+          <a class="btn alt" href="#kontak">Hubungi saya</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="images/foto.jpg" alt="Foto Mangput memakai udeng putih dan kaus putih">
+      </div>
+    </div>
+  </div>
+
+  <div class="band poleng" role="presentation"></div>
+
+  <section id="tentang">
+    <div class="wrap about">
+      <div>
+        <h2>Tentang saya</h2>
+        <p>Saya siswa jurusan RPL yang suka mengubah ide menjadi tampilan web. Saya mulai dari menentukan siapa penggunanya, lalu menata halaman supaya orang langsung paham harus klik apa.</p>
+        <p>Saya tinggal di Bali, jadi proyek pertama yang saya pilih dekat dengan budaya di sekitar saya: persewaan busana adat Bali.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Jurusan</dt><dd>Rekayasa Perangkat Lunak (RPL)</dd></div>
+        <div><dt>Fokus saat ini</dt><dd>Desain UI/UX dan web front-end</dd></div>
+        <div><dt>Proyek terbaru</dt><dd>Desain web Alep Pangus</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="proyek">
+    <div class="wrap">
+      <div class="proj-head">
+        <div>
+          <h2>Alep Pangus: desain web sewa dan jual busana adat Bali</h2>
+          <p class="sub" style="margin:0">Website untuk menyewa busana upacara, wisuda, dan pemotretan, serta membeli udeng, saput, dan kemeja putih. Pengunjung bisa memilih kategori, melihat harga, lalu langsung memesan.</p>
+        </div>
+        <p class="meta">
+          <span><b>Peran:</b> UI/UX designer</span>
+          <span><b>Jenis:</b> Desain landing page (desktop)</span>
+          <span><b>Pengguna:</b> Umat yang butuh busana sembahyang dan acara adat</span>
+        </p>
+      </div>
+
+      <figure>
+        <button class="shot" type="button" data-full="ui1" aria-label="Perbesar gambar halaman utama">
+          <img src="images/alep-pangus-1.jpg" alt="Halaman utama Alep Pangus">
+        </button>
+        <figcaption>Halaman utama. Judul langsung menjelaskan layanan, dan ada dua tombol: lihat koleksi atau pesan sekarang. Warna maroon dan emas diambil dari kain songket Bali.</figcaption>
+      </figure>
+
+      <div class="shots">
+        <figure>
+          <button class="shot" type="button" data-full="ui2" aria-label="Perbesar gambar kategori dan produk">
+            <img src="images/alep-pangus-2.jpg" alt="Kategori dan produk Alep Pangus">
+          </button>
+          <figcaption>Kategori sewa dan produk dipisah. Sewa memakai tombol Book Now dengan harga per hari, produk memakai tombol Buy.</figcaption>
+        </figure>
+
+        <figure>
+          <button class="shot" type="button" data-full="ui3" aria-label="Perbesar gambar tentang dan kontak">
+            <img src="images/alep-pangus-3.jpg" alt="Bagian tentang usaha dan kontak">
+          </button>
+          <figcaption>Bagian tentang usaha dengan foto asli, angka pengalaman, dan kontak telepon serta Instagram agar mudah dihubungi.</figcaption>
+        </figure>
+      </div>
+
+      <div class="notes">
+        <div>
+          <h3>Alur yang singkat</h3>
+          <p>Dari halaman utama ke pemesanan hanya satu klik, karena tombol Book Now ada di menu dan di hero.</p>
+        </div>
+        <div>
+          <h3>Harga terlihat jelas</h3>
+          <p>Setiap kartu menampilkan nama, harga, dan tombol aksi di tempat yang sama, jadi mudah dibandingkan.</p>
+        </div>
+        <div>
+          <h3>Identitas budaya</h3>
+          <p>Logo emas, foto busana asli, dan warna maroon membuat tampilan terasa Bali, bukan template umum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band poleng" role="presentation"></div>
+
+  <section id="skill">
+    <div class="wrap">
+      <h2>Keahlian</h2>
+      <p class="sub">Yang sedang saya pelajari dan pakai di sekolah.</p>
+      <div class="skills">
+        <div>
+          <h3>Desain</h3>
+          <ul>
+            <li>UI/UX web</li>
+            <li>Wireframe dan layout</li>
+            <li>Pemilihan warna dan huruf</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Pemrograman web</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript dasar</li>
+            <li>Tampilan responsif</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cara kerja</h3>
+          <ul>
+            <li>Memahami kebutuhan pengguna</li>
+            <li>Teliti pada detail tampilan</li>
+            <li>Mau menerima masukan</li>
+            <li>Kerja tim di proyek sekolah</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU JAVASCRIPT ============ -->
+  <section id="javascript">
+    <div class="wrap">
+      <h2>Latihan Praktik JavaScript</h2>
+      <p class="js-identitas">I Komang Aditya Putra | XI RPL 2</p>
+
+      <div class="js-grid">
+        <div class="js-box"><h3>I.1 - Nama dan Kelas</h3><div class="js-out" id="hasil1"></div></div>
+        <div class="js-box"><h3>I.2 - Variabel</h3><div class="js-out" id="hasil2"></div></div>
+        <div class="js-box"><h3>I.3 - Operasi Aritmatika</h3><div class="js-out" id="hasil3"></div></div>
+        <div class="js-box"><h3>I.4 - Kelulusan Nilai 90</h3><div class="js-out" id="hasil4"></div></div>
+        <div class="js-box"><h3>I.5 - Kelulusan Nilai 60</h3><div class="js-out" id="hasil5"></div></div>
+        <div class="js-box"><h3>J - Tantangan Mini</h3><div class="js-out" id="hasilJ"></div></div>
+
+        <!-- Kalkulator Lingkaran -->
+        <div class="js-box">
+          <h3>K - Kalkulator Lingkaran</h3>
+          <label for="jari">Jari-jari:</label>
+          <input type="number" id="jari" placeholder="Masukkan jari-jari" min="0" step="any">
+          <button type="button" id="btnLingkaran">Hitung</button>
+          <div class="js-out" id="hasilLingkaran"></div>
+        </div>
+
+        <!-- Kalkulator Segitiga -->
+        <div class="js-box">
+          <h3>L - Kalkulator Segitiga</h3>
+          <label for="alas">Alas:</label>
+          <input type="number" id="alas" placeholder="Masukkan alas" min="0" step="any">
+          <label for="tinggi">Tinggi:</label>
+          <input type="number" id="tinggi" placeholder="Masukkan tinggi" min="0" step="any">
+          <label for="sisiA">Sisi A:</label>
+          <input type="number" id="sisiA" placeholder="Masukkan sisi A" min="0" step="any">
+          <label for="sisiB">Sisi B:</label>
+          <input type="number" id="sisiB" placeholder="Masukkan sisi B" min="0" step="any">
+          <button type="button" id="btnSegitiga">Hitung</button>
+          <div class="js-out" id="hasilSegitiga"></div>
+        </div>
+
+        <!-- Kalkulator Persegi Panjang -->
+        <div class="js-box">
+          <h3>M - Kalkulator Persegi Panjang</h3>
+          <label for="panjang">Panjang:</label>
+          <input type="number" id="panjang" placeholder="Masukkan panjang" min="0" step="any">
+          <label for="lebar">Lebar:</label>
+          <input type="number" id="lebar" placeholder="Masukkan lebar" min="0" step="any">
+          <button type="button" id="btnPersegiPanjang">Hitung</button>
+          <div class="js-out" id="hasilPersegiPanjang"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="contact">
+    <div class="wrap">
+      <h2>Mari bicara</h2>
+      <p class="sub">Punya proyek, magang, atau ingin diskusi desain? Kirim pesan saja.</p>
+      <a class="big" href="mailto:ikomangadityaputra16@gmail.com">ikomangadityaputra16@gmail.com</a>
+      <ul>
+        <li>Telepon / WhatsApp: <a href="tel:+6289524599287">0895-2459-9287</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/mangputanabaik" target="_blank" rel="noopener">@mangputanabaik</a></li>
+        <li>TikTok: <a href="https://www.tiktok.com/@mangputbaik" target="_blank" rel="noopener">@mangputbaik</a></li>
+        <li>Bali, Indonesia</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Mangput. Portofolio siswa RPL.</div>
+</footer>
+
+<dialog id="dlg" aria-label="Gambar diperbesar">
+  <img id="dimg" alt="">
+  <button type="button" id="close">Tutup</button>
+</dialog>
+
+<!-- ============ SCRIPT PORTOFOLIO ============ -->
+<script>
+const IMGS = {
+    ui1: "images/alep-pangus-1.jpg",
+    ui2: "images/alep-pangus-2.jpg",
+    ui3: "images/alep-pangus-3.jpg"
+};
+
+const dlg = document.getElementById("dlg");
+const dimg = document.getElementById("dimg");
+
+document.querySelectorAll(".shot").forEach(button => {
+    button.addEventListener("click", () => {
+        dimg.src = IMGS[button.dataset.full];
+        dimg.alt = button.querySelector("img").alt;
+        dlg.showModal();
+    });
+});
+
+document.getElementById("close").addEventListener("click", () => {
+    dlg.close();
+});
+
+dlg.addEventListener("click", event => {
+    if (event.target === dlg) {
+        dlg.close();
+    }
+});
+
+document.getElementById("theme").addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme
+        ? root.dataset.theme === "dark"
+        : matchMedia("(prefers-color-scheme: dark)").matches;
+
+    root.dataset.theme = dark ? "light" : "dark";
+});
+
+/* Musik: tombol play/pause bergantian (hanya 1 tombol di HTML) */
+const lagu = document.getElementById("lagu");
+const playMusik = document.getElementById("playMusik");
+
+playMusik.addEventListener("click", async () => {
+    try {
+        if (lagu.paused) {
+            await lagu.play();
+            playMusik.textContent = "⏸";
+        } else {
+            lagu.pause();
+            playMusik.textContent = "▶";
+        }
+    } catch (error) {
+        console.error("Kesalahan pemutar musik:", error);
+        alert("Gagal memutar lagu. Periksa file lagu.mp3");
+    }
+});
+
+lagu.addEventListener("error", () => {
+    console.error("File lagu.mp3 gagal dimuat. Periksa lokasi dan format file.");
+});
+</script>
+
+<!-- ============ SCRIPT LATIHAN JAVASCRIPT ============ -->
+<script>
+(function () {
+    const $ = id => document.getElementById(id);
+
+    // I.1 - Nama dan Kelas
+    let nama = "I Komang Aditya Putra";
+    let kelas = "XI RPL 2";
+    console.log(nama);
+    console.log("Kelas " + kelas);
+    $("hasil1").innerHTML = nama + "<br>Kelas " + kelas;
+
+    // I.2 - Variabel
+    let umur = 17;
+    let jurusan = "RPL";
+    console.log("Nama:", nama);
+    console.log("Umur:", umur);
+    console.log("Jurusan:", jurusan);
+    $("hasil2").innerHTML =
+        "Nama: " + nama +
+        "<br>Umur: " + umur + " tahun" +
+        "<br>Jurusan: " + jurusan;
+
+    // I.3 - Operasi Aritmatika
+    let a = 20;
+    let b = 5;
+    console.log("Penjumlahan:", a + b);
+    console.log("Pengurangan:", a - b);
+    console.log("Perkalian:", a * b);
+    console.log("Pembagian:", a / b);
+    $("hasil3").innerHTML =
+        "Penjumlahan: " + (a + b) +
+        "<br>Pengurangan: " + (a - b) +
+        "<br>Perkalian: " + (a * b) +
+        "<br>Pembagian: " + (a / b);
+
+    // I.4 - Kelulusan Nilai 90
+    let nilai = 90;
+    let status90 = nilai >= 75 ? "Lulus" : "Belum lulus";
+    console.log("Nilai:", nilai);
+    console.log("Status:", status90);
+    $("hasil4").innerHTML = "Nilai: " + nilai + "<br>Status: " + status90;
+
+    // I.5 - Kelulusan Nilai 60
+    nilai = 60;
+    let status60 = nilai >= 75 ? "Lulus" : "Belum lulus";
+    console.log("Nilai:", nilai);
+    console.log("Status:", status60);
+    $("hasil5").innerHTML = "Nilai: " + nilai + "<br>Status: " + status60;
+
+    // J - Tantangan Mini
+    let namaSiswa = "I Komang Aditya Putra";
+    let nilaiSiswa = 85;
+    let statusSiswa = nilaiSiswa >= 75 ? "Lulus" : "Belum lulus";
+    console.log("Nama siswa:", namaSiswa);
+    console.log("Nilai:", nilaiSiswa);
+    console.log("Status:", statusSiswa);
+    $("hasilJ").innerHTML =
+        "Nama siswa: " + namaSiswa +
+        "<br>Nilai: " + nilaiSiswa +
+        "<br>Status: " + statusSiswa;
+
+    // K - Kalkulator Lingkaran
+    function hitungLingkaran() {
+        const input = $("jari").value;
+        const hasil = $("hasilLingkaran");
+
+        if (input.trim() === "") {
+            hasil.textContent = "Masukkan jari-jari terlebih dahulu!";
+            return;
+        }
+
+        const r = Number(input);
+
+        if (!Number.isFinite(r) || r <= 0) {
+            hasil.textContent = "Jari-jari harus lebih besar dari 0!";
+            return;
+        }
+
+        const luas = Math.PI * r * r;
+        const keliling = 2 * Math.PI * r;
+
+        hasil.innerHTML =
+            "Luas: " + luas.toFixed(2) +
+            "<br>Keliling: " + keliling.toFixed(2);
+    }
+
+    // L - Kalkulator Segitiga
+    function hitungSegitiga() {
+        const inputs = ["alas", "tinggi", "sisiA", "sisiB"].map(id => $(id).value);
+        const hasil = $("hasilSegitiga");
+
+        if (inputs.some(v => v.trim() === "")) {
+            hasil.textContent = "Isi semua ukuran segitiga terlebih dahulu!";
+            return;
+        }
+
+        const [alas, tinggi, sisiA, sisiB] = inputs.map(Number);
+
+        if (![alas, tinggi, sisiA, sisiB].every(Number.isFinite) ||
+            alas <= 0 || tinggi <= 0 || sisiA <= 0 || sisiB <= 0) {
+            hasil.textContent = "Semua ukuran harus lebih besar dari 0!";
+            return;
+        }
+
+        if (alas + sisiA <= sisiB || alas + sisiB <= sisiA || sisiA + sisiB <= alas) {
+            hasil.textContent = "Panjang sisi tidak membentuk segitiga!";
+            return;
+        }
+
+        const luas = 0.5 * alas * tinggi;
+        const keliling = alas + sisiA + sisiB;
+
+        hasil.innerHTML =
+            "Luas: " + luas.toFixed(2) +
+            "<br>Keliling: " + keliling.toFixed(2);
+    }
+
+    // M - Kalkulator Persegi Panjang
+    function hitungPersegiPanjang() {
+        const inputPanjang = $("panjang").value;
+        const inputLebar = $("lebar").value;
+        const hasil = $("hasilPersegiPanjang");
+
+        if (inputPanjang.trim() === "" || inputLebar.trim() === "") {
+            hasil.textContent = "Isi panjang dan lebar terlebih dahulu!";
+            return;
+        }
+
+        const panjang = Number(inputPanjang);
+        const lebar = Number(inputLebar);
+
+        if (!Number.isFinite(panjang) || !Number.isFinite(lebar) ||
+            panjang <= 0 || lebar <= 0) {
+            hasil.textContent = "Panjang dan lebar harus lebih besar dari 0!";
+            return;
+        }
+
+        const luas = panjang * lebar;
+        const keliling = 2 * (panjang + lebar);
+
+        hasil.innerHTML =
+            "Luas: " + luas.toFixed(2) +
+            "<br>Keliling: " + keliling.toFixed(2);
+    }
+
+    $("btnLingkaran").addEventListener("click", hitungLingkaran);
+    $("btnSegitiga").addEventListener("click", hitungSegitiga);
+    $("btnPersegiPanjang").addEventListener("click", hitungPersegiPanjang);
+})();
+</script>
+
+</body>
+</html>
